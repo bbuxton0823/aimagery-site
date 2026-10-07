@@ -41,7 +41,7 @@
         <p>A clear, dimensioned plan generated from the property scan, showing room names, openings, fixtures, and the overall layout for everyday project reference.</p>
       </div>
       <div class="stw-plan-image">
-        <img src="/images/aec/schematic-floor-plan-sample.jpg" alt="Sample schematic 2D floor plan with labeled rooms and dimensions" loading="lazy" decoding="async">
+        <img src="/images/aec/schematic-floor-plan-sample.webp" alt="Sample schematic 2D floor plan with labeled rooms and dimensions" width="640" height="820" loading="lazy" decoding="async" fetchpriority="low">
       </div>`;
     shell.append(card);
   }
@@ -58,7 +58,7 @@
           </header>
 
           <figure class="stw-media">
-            <video class="stw-video" controls muted loop playsinline preload="metadata" poster="/images/aec/site-twin/site-twin-anonymous-poster.jpg">
+            <video class="stw-video" controls muted loop playsinline preload="none" poster="/images/aec/site-twin/site-twin-anonymous-poster.webp">
               <source src="/images/aec/site-twin/site-twin-anonymous.mp4" type="video/mp4">
               Your browser does not support embedded video.
             </video>
