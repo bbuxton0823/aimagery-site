@@ -24,6 +24,28 @@
     grid.append(link);
   }
 
+  function addSchematicPlan() {
+    if (document.querySelector('[data-schematic-plan]')) return;
+    const section = [...document.querySelectorAll('section')].find((candidate) =>
+      candidate.querySelector('h2')?.textContent?.includes('Production-Ready Floor Plans')
+    );
+    const shell = section?.querySelector('.section-shell');
+    if (!shell) return;
+    const card = document.createElement('article');
+    card.dataset.schematicPlan = 'true';
+    card.className = 'stw-plan-card';
+    card.innerHTML = `
+      <div class="stw-plan-copy">
+        <p class="stw-plan-eyebrow">Floor plan sample</p>
+        <h3>Sample Schematic 2D Floor Plan</h3>
+        <p>A clear, dimensioned plan generated from the property scan, showing room names, openings, fixtures, and the overall layout for everyday project reference.</p>
+      </div>
+      <div class="stw-plan-image">
+        <img src="/images/aec/schematic-floor-plan-sample.jpg" alt="Sample schematic 2D floor plan with labeled rooms and dimensions" loading="lazy" decoding="async">
+      </div>`;
+    shell.append(card);
+  }
+
   function sectionMarkup() {
     return `
       <section id="site-twin" class="stw" aria-labelledby="stw-title" data-site-twin>
@@ -73,6 +95,7 @@
     if (!isAec()) return;
     addNavLink();
     addIncludesTile();
+    addSchematicPlan();
     if (document.querySelector('[data-site-twin]')) return;
     const comparisons = document.querySelector('#comparisons');
     if (!comparisons) return;

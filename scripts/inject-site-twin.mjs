@@ -3,8 +3,8 @@ import path from 'node:path';
 
 const root = path.resolve('current-site');
 const htmlFiles = ['index.html', 'aec/index.html', 'book/index.html', 'privacy/index.html', '_not-found/index.html'];
-const stylesheet = '<link rel="stylesheet" href="/site-twin.css?v=20261007-2" data-site-twin-assets="true"/>';
-const script = '<script src="/site-twin.js?v=20261007-2" defer data-site-twin-assets="true"></script>';
+const stylesheet = '<link rel="stylesheet" href="/site-twin.css?v=20261007-3" data-site-twin-assets="true"/>';
+const script = '<script src="/site-twin.js?v=20261007-3" defer data-site-twin-assets="true"></script>';
 
 for (const relative of htmlFiles) {
   const file = path.join(root, relative);
