@@ -58,7 +58,7 @@
           </header>
 
           <figure class="stw-media">
-            <video class="stw-video" controls muted loop playsinline preload="none" poster="/images/aec/site-twin/site-twin-anonymous-poster.webp">
+            <video class="stw-video" controls muted loop playsinline preload="none" poster="/images/aec/site-twin/site-twin-anonymous-poster.webp?v=20261007-5">
               <source src="/images/aec/site-twin/site-twin-anonymous.mp4" type="video/mp4">
               Your browser does not support embedded video.
             </video>
