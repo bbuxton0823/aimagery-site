@@ -28,6 +28,8 @@
 .stw-note { width: 100%; margin: 0; text-align: center; color: #94a3b8; font-size: .9rem; }
 .stw-btn { display: inline-flex; min-height: 44px; align-items: center; justify-content: center; padding: .75rem 1.25rem; border-radius: .6rem; background: #0d9488; color: #fff; font-weight: 700; text-decoration: none; transition: background-color .18s ease, transform .18s ease; }
 .stw-btn:hover { background: #0f766e; transform: translateY(-1px); }
+.stw-btn--secondary { border: 1px solid rgb(94 234 212 / .55); background: transparent; color: #ccfbf1; }
+.stw-btn--secondary:hover { background: rgb(13 148 136 / .18); }
 .stw-btn:focus-visible { outline: 2px solid #5eead4; outline-offset: 4px; }
 
 @media (min-width: 720px) {

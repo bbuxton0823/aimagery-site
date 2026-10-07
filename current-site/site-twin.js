@@ -62,6 +62,7 @@
 
           <div class="stw-actions">
             <p class="stw-note">Site Twin is an early-access prototype available with qualifying scan-to-BIM projects.</p>
+            <a class="stw-btn stw-btn--secondary" href="https://my.matterport.com/show/?m=pDFxjSfvf7F" target="_blank" rel="noopener noreferrer">Explore the Matterport scan</a>
             <a class="stw-btn" href="#quote">Ask for Site Twin in your quote</a>
           </div>
         </div>
@@ -76,6 +77,9 @@
     const comparisons = document.querySelector('#comparisons');
     if (!comparisons) return;
     comparisons.insertAdjacentHTML('afterend', sectionMarkup());
+    if (location.hash === '#site-twin') {
+      requestAnimationFrame(() => document.querySelector('#site-twin')?.scrollIntoView());
+    }
   }
 
   let timer;
